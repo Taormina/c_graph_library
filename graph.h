@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <string.h>
+
 /* Vertex struct */
 typedef struct cgl_vertex {
 	char* label;
@@ -19,5 +22,6 @@ typedef struct cgl_graph {
 
 
 /*  Heap declarations */
+void add_edge(graph* curr_graph);
 edge* heapify(edge* min_heap);
-int regrow(edge* min_heap);
+int regrow(graph* curr_graph);
