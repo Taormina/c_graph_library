@@ -22,6 +22,5 @@ typedef struct cgl_graph {
 
 
 /*  Heap declarations */
-void add_edge(graph* curr_graph);
-edge* heapify(edge* min_heap);
-int regrow(graph* curr_graph);
+void add_edge(graph* curr_graph, edge* new_edge);
+void edge_swap(edge* a, edge* b);
